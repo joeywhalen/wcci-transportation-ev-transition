@@ -1,0 +1,8 @@
+package org.wcci.transportationev.project.comparev.storage;
+
+import org.springframework.data.repository.CrudRepository;
+import org.wcci.transportationev.project.comparev.resources.Article;
+
+public interface ArticleRepository extends CrudRepository<Article, Long> {
+    
+}
