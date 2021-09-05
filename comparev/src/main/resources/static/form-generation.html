@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/images/favicon.png">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Test Form Generation</h1>
+
+        <container class="container">
+
+            <form class="user-vehicle">
+
+                <label for="states">Choose State:</label>
+
+                <select class="drop-down" id="states" name="states">
+                    <option value="----">----</option>
+                </select>
+
+                <br><br>
+
+                <label for="years">Choose year:</label>
+                <select id="years" name="years">
+                    <option value="----">----</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                </select>
+
+                <br><br>
+
+                <label for="makes">Choose make:</label>
+                <select id="makes" name="makes">
+                    <option value="------">------</option>
+                </select>
+
+                <br><br>
+
+                <label for="models">Choose model:</label>
+                <select id="models" name="models">
+                    <option value="------">------</option>
+                </select>
+
+            </form>
+
+            <h2 class="test-year">No Year Has Been Selected</h2>
+            <h2 class="test-make">No Make Has Been Selected</h2>
+            <h2 class="test-model">No Model Has Been Selected</h2>
+
+        </container>
+
+        <script src="./js/userVehicleForm.js" type="module"></script>
+
+    </body>
+
+</html>
