@@ -169,7 +169,7 @@ public class GasPricePopulator implements CommandLineRunner {
         GasPrice wyoming = new GasPrice("Wyoming", 3.58f, 857);
         gasPriceRepository.save(wyoming);
 
-        GasPrice nationalAverage = new GasPrice("National Average", 3.16f, 950);
-        gasPriceRepository.save(nationalAverage);
+        // GasPrice nationalAverage = new GasPrice("National Average", 3.16f, 950);
+        // gasPriceRepository.save(nationalAverage);
     }
 }
