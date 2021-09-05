@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100&display=swap');
+
+* {
+    font-family: 'Georama', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+/* ----------------Header---------------- */
+
+.header-container {
+    display: block;
+    background-color: #000000;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    height: 86.5px !important;
+    overflow: hidden;
+    z-index: 10;
+    position: fixed;
+    top: -1%;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    list-style: none;
+}
+
+.website-title {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+header h1 {
+    color: rgb(128, 176, 85);
+}
+
+header span {
+    color: rgb(250, 116, 26);
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, rgb(128, 176, 85) 0%, rgb(250, 116, 26) 100%);
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(201, 20, 20, 0.1);
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 130px;
+    width: 100%;
+    top: 40px;
+    left: 20px;
+    height: 22px;
+    width: 25px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+/* -------------------------Big Car Image------------------- */
+
+.car-image {
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -1%;
+}
+
+.car-image-text {
+    padding: 20px;
+    letter-spacing: 4px;
+    background-color: rgba(0, 0, 0, 0.521);
+    height: 30vh;
+}
+
+.back-to-results {
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    font-size: 18px;
+    margin-left: 1%;
+}
+
+.back-to-results a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.back-to-results a:hover {
+    color: rgba(255, 255, 255, 0.445);
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.car-make {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    font-size: 50px;
+    margin-left: 1%;
+}
+
+.car-model {
+    position: absolute;
+    top: 155px;
+    left: 16px;
+    font-size: 30px;
+    margin-left: 1%;
+}
+
+.car-price {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 40px;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+.car-mileage {
+    position: absolute;
+    top: 90px;
+    right: 16px;
+    margin-right: 1%;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+/* --------------------White Section----------------------- */
+
+#colored-rectangle {
+    margin: 2%;
+    height: 10px;
+    width: 500px;
+    background-image: linear-gradient(to right, rgb(250, 116, 26), rgb(128, 176, 85), black);
+}
+
+.details-section {
+    text-align: center;
+    margin: 2%;
+    list-style-type: none;
+}
+
+.details-section h5 {
+    text-align: center;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.standard-equip-text,
+.price-details-text,
+.basic-info-text {
+    text-align: center;
+    list-style-type: none;
+    line-height: 25px;
+    margin-right: 2%;
+}
+
+.vehicle-details-title {
+    text-align: none;
+    font-size: 55px;
+}
+
+.review-comments-notation {
+    font-size: 30px;
+}
