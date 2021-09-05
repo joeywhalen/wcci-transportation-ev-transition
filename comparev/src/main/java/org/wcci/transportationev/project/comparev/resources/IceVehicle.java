@@ -29,7 +29,7 @@ public class IceVehicle {
     @JsonIgnore
     private Make make;
 
-    protected IceVehicle() {
+    public IceVehicle() {
 
     }
 
