@@ -9,4 +9,5 @@ This project revolves around the current transition from ICE (Internal Combustio
 Interact with the application here:
 https://wcci-ev-transition.herokuapp.com/
 Please allow about 30 seconds for the HEROKU platform to launch the application. 🎶Do-do-do-do🎶
+
 This project is MVC based and includes Java, JavaScript, HTML5, and CSS3.
